@@ -1,0 +1,8 @@
+<h2>todo List</h2>
+
+<div *ngFor="let todo of todos">
+  {{todo.title}}
+  <a button [routerLink]="['/todo-edit', todo.id]">{{todo.title}}</a>
+</div>
+
+<button [routerLink]="['/todo-add']">Add</button>
